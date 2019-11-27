@@ -1,0 +1,77 @@
+@import 'btn';
+@import 'reset.css';
+@import 'normalize';
+
+@font-face {
+  font-family: 'Century Gothic Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Century Gothic Regular'), url('/fonts/GOTHIC.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Century Gothic Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Century Gothic Italic'), url('/fonts/GOTHICI.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Century Gothic Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Century Gothic Bold'), url('/fonts/GOTHICB.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Century Gothic Bold Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Century Gothic Bold Italic'), url('/fonts/GOTHICBI.woff') format('woff');
+}
+
+body {
+  font-family: 'Century Gothic Regular', Helvetica, sans-serif;
+  background-color: black;
+  color: white;
+}
+
+.screen {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.inner-wrapper {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.answer {
+  font-size: 28px;
+  text-decoration: underline;
+}
+
+.fadein {
+  opacity: 0;
+  animation: fadeinLoad 4s 2s forwards;
+}
+
+@keyframes fadeinLoad {
+  0% { opacity:0; }
+  100% { opacity:1; }
+}
+
+h3 {
+  font-size: 30px;
+}
